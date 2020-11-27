@@ -1,5 +1,9 @@
-defmodule Bask.Data.Function do
+defmodule Socle.Data.Function do
   use Socle.Meta.Curry
+
+  require Socle.Meta
+
+  Socle.Meta.mk_open
 
   defcurried id(x), do: x
 
